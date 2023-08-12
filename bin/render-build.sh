@@ -3,6 +3,5 @@
 set -o errexit
 
 bundle install
-rails db:reset
 rails db:seed
 
