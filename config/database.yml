@@ -12,8 +12,9 @@ default: &default
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
 
 development:
-  <<: *default
-  database: db/development.postgresql
+  url: postgresql://eazymartbackend_user:KubPTHiLCFfzlsFw9CMHE4SKAd0jWx0Z@dpg-cjb3d5ocfp5c73a9dk80-a/eazymartbackend
+  # <<: *default
+  # database: db/development.postgresql
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
